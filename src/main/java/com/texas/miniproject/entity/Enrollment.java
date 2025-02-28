@@ -17,10 +17,6 @@ public class Enrollment {
     @SequenceGenerator(name = "enrollment_sequence", sequenceName = "enrollment_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "enrollment_sequence")
     private Long id;
-
-//    private Long student_Id;
-//    private Long courseId;
-
     private LocalDate enrollmentDate;
     private String grade;
 
